@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="TheProject.WinUI.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheProject.WinUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Border Background="#272537">
+
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="900"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="topName" Text="Home" FontFamily="Times New Roman" FontSize="40"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Teams" HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="30"></TextBlock>
+                <Button Click="TeamButton_Click"
+            Margin="50,0,0,400"
+            HorizontalAlignment="Center"
+            ToolTipService.ToolTip="Create New Teams">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border x:Name="theBorder"
+                        BorderBrush="Transparent"
+                        BorderThickness="2"
+                                    CornerRadius="20">
+                                <Image Source="https://static01.nyt.com/images/2021/04/20/sports/20soccer-reax-superleague/20soccer-reax-superleague-square640-v3.png" Height="300" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Leagues" HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="30"></TextBlock>
+                <Button Click="LeagueButton_Click"
+            Margin="50,0,0,400"
+            HorizontalAlignment="Center"
+            ToolTipService.ToolTip="Show All Leagues">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border x:Name="theBorder"
+                        BorderBrush="Transparent"
+                        BorderThickness="2"
+                                    CornerRadius="20">
+                                <Image Source="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2020/03/19/133591-untitled-design-1.jpg" Height="300" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Page>
