@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
@@ -14,8 +14,16 @@
   <ItemGroup>
     <None Remove="HomePage.xaml" />
     <None Remove="LeaguePage.xaml" />
+    <None Remove="LeaguePages\CreateLeague.xaml" />
+    <None Remove="LeaguePages\DeleteLeague.xaml" />
+    <None Remove="LeaguePages\ReadLeague.xaml" />
+    <None Remove="LeaguePages\UpdateLeague.xaml" />
     <None Remove="SettingsPage.xaml" />
     <None Remove="TeamPage.xaml" />
+    <None Remove="TeamPages\AddTeamToLeague.xaml" />
+    <None Remove="TeamPages\CreateTeam.xaml" />
+    <None Remove="TeamPages\DeleteTeam.xaml" />
+    <None Remove="TeamPages\UpdateTeam.xaml" />
     <None Remove="UserPage.xaml" />
   </ItemGroup>
 
@@ -44,31 +52,61 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="SettingsPage.xaml">
+    <Page Update="MainPages\SettingsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="HomePage.xaml">
+    <Page Update="MainPages\HomePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="UserPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="LeaguePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="TeamPage.xaml">
+    <Page Update="MainPages\UserPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="TeamPages\AddTeamToLeague.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="LeaguePages\UpdateLeague.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="LeaguePages\DeleteLeague.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="LeaguePages\ReadLeague.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="LeaguePages\CreateLeague.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="TeamPages\UpdateTeam.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="TeamPages\DeleteTeam.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="TeamPages\CreateTeam.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>

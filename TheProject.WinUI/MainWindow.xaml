@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="250"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
@@ -31,9 +31,8 @@
                              BorderBrush="#474465"
                              Background="#272537"
                              FontSize="18"
-                             CornerRadius="0"
                              Click="HomeButton_Click"
-                             Margin="0,20,0,0"
+                             Margin="10,10,0,0"
                              />
 
                 <Button      Name="LeagueButton"
@@ -43,12 +42,60 @@
                              BorderThickness="0"
                              BorderBrush="#474465"
                              Background="#272537"
-                             Margin="0,20,0,0"
-                             CornerRadius="0"
+                             Margin="10,10,0,0"
                              Click="LeagueButton_Click"
                              FontSize="18"
                              />
 
+                <StackPanel Visibility="Collapsed" Name="MenyLeague" Grid.Row="1">
+                    <Button      Name="CreateLeague"
+                             Content="Create a league"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             FontSize="12"
+                             Click="CreateLeague_Click"
+                             Margin="10,10,0,0"
+                             />
+
+                    <Button      Name="ReadLeague"
+                             Content="Show a league"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             Margin="10,10,0,0"
+                             Click="ReadLeague_Click"
+                             FontSize="12"
+                             />
+
+                    <Button      Name="UpdateLeague"
+                             Content="Edit a league"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             FontSize="12"
+                             Margin="10,10,0,0"
+                             Click="UpdateLeague_Click"
+                             />
+
+                    <Button      Name="DeleteLeague"
+                             Content="Delete a league"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             FontSize="12"
+                             Margin="10,10,0,0"
+                             Click="DeleteLeague_Click"
+                             />
+                </StackPanel>
                 <Button      Name="TeamButton"
                              Content="Teams"
                              Height="50"
@@ -57,11 +104,58 @@
                              BorderBrush="#474465"
                              Background="#272537"
                              FontSize="18"
-                             CornerRadius="0"
-                             Margin="0,20,0,0"
+                             Margin="10,10,0,0"
                              Click="TeamButton_Click"
                              />
+                <StackPanel Visibility="Collapsed" Name="MenyTeam" Grid.Row="1">
+                    <Button      Name="CreateTeam"
+                             Content="Create a team"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             FontSize="12"
+                             Click="CreateTeam_Click"
+                             Margin="10,10,0,0"
+                             />
 
+                    <Button      Name="AddTeamToLeague"
+                             Content="Add team to league"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             Margin="10,10,0,0"
+                             Click="AddTeamToLeague_Click"
+                             FontSize="12"
+                             />
+
+                    <Button      Name="UpdateTeam"
+                             Content="Edit a team"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             FontSize="12"
+                             Margin="10,10,0,0"
+                             Click="UpdateTeam_Click"
+                             />
+
+                    <Button      Name="DeleteTeam"
+                             Content="Delete a team"
+                             Height="50"
+                             Width="200"
+                             BorderThickness="0"
+                             BorderBrush="#474465"
+                             Background="#272537"
+                             FontSize="12"
+                             Margin="10,10,0,0"
+                             Click="DeleteTeam_Click"
+                             />
+                </StackPanel>
                 <Button      Name="UserButton"
                              Content="User"
                              Height="50"
@@ -70,8 +164,7 @@
                              BorderBrush="#474465"
                              Background="#272537"
                              FontSize="18"
-                             CornerRadius="0"
-                             Margin="0,20,0,0"
+                             Margin="10,10,0,0"
                              Click="UserButton_Click"
                              />
 
@@ -80,12 +173,11 @@
                              VerticalAlignment="Bottom"
                              Height="50"
                              Width="200"
-                             CornerRadius="0"
                              BorderThickness="0"
                              BorderBrush="#474465"
                              Background="#272537"
                              FontSize="18"
-                             Margin="0,280,0,0"
+                             Margin="10,10,0,0"
                              Click="SettingsButton_Click"
                              />
 

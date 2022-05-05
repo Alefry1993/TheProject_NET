@@ -21,7 +21,8 @@ namespace TheProject.API.Context
             modelBuilder.Entity<League>().HasData(new League { LeagueId = 4, LeagueName = "Serie A", Nationality = "Italia" });
             modelBuilder.Entity<League>().HasData(new League { LeagueId = 5, LeagueName = "Bundesliga", Nationality = "Germany" });
         }
+
     }
 
-    
+
 }

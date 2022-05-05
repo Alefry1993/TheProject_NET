@@ -32,14 +32,14 @@
                 <Button Click="TeamButton_Click"
             Margin="50,0,0,400"
             HorizontalAlignment="Center"
-            ToolTipService.ToolTip="Create New Teams">
+            ToolTipService.ToolTip="Create A New Team">
                     <Button.Template>
                         <ControlTemplate>
                             <Border x:Name="theBorder"
                         BorderBrush="Transparent"
                         BorderThickness="2"
                                     CornerRadius="20">
-                                <Image Source="https://static01.nyt.com/images/2021/04/20/sports/20soccer-reax-superleague/20soccer-reax-superleague-square640-v3.png" Height="300" />
+                                <Image Name="leagueImage" Source="https://static01.nyt.com/images/2021/04/20/sports/20soccer-reax-superleague/20soccer-reax-superleague-square640-v3.png" Height="300" />
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
@@ -48,18 +48,18 @@
             </StackPanel>
 
             <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical"  HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="Leagues" HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="30"></TextBlock>
+                <TextBlock Text="League" HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="30"></TextBlock>
                 <Button Click="LeagueButton_Click"
             Margin="50,0,0,400"
             HorizontalAlignment="Center"
-            ToolTipService.ToolTip="Show All Leagues">
+            ToolTipService.ToolTip="Create A New League">
                     <Button.Template>
                         <ControlTemplate>
                             <Border x:Name="theBorder"
                         BorderBrush="Transparent"
                         BorderThickness="2"
                                     CornerRadius="20">
-                                <Image Source="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2020/03/19/133591-untitled-design-1.jpg" Height="300" />
+                                <Image Name="TeamImage" Source="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2020/03/19/133591-untitled-design-1.jpg" Height="300" />
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
